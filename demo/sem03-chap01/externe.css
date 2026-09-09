@@ -1,0 +1,48 @@
+div {
+    color: violet;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#div-id {
+    background-color: aquamarine;
+}
+
+.externe {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.carte-demo {
+    padding: 1rem;
+    border: 2px solid #c5d9e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.carte-demo > div {
+    padding: 1rem;
+    border: 2px solid #ff00fff6;
+}
+
+.carte-demo .externe {
+    background-color: pink;
+}
+
+button:focus {
+    background-color: #2563eb;
+    outline: 3px solid red;
+    transform: translateY(-2px);
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: 3px solid #bfdbfe;
+}
+
+input:checked + label {
+    color: #047857;
+    font-weight: 700;
+}

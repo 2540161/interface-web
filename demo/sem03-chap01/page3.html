@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --couleur-principale: #000000;
+            --couleur-fond: #ffffff;
+        }
+        body.sombre {
+            --couleur-principale: #ffffff;
+            --couleur-fond: #000000;
+        }
+
+        body, div, p {
+            color: var(--couleur-principale);
+            background-color: var(--couleur-fond);
+        }
+        input[type="email"] {
+            border: 2px solid green;
+        }
+        div.parent {
+            border: 3px solid blue;
+        }
+        div.parent:has(input:checked) {
+            background-color: chartreuse;
+        }
+        div :is(h1, h2, h3) {
+            font-size: 200%;
+        }
+        * {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body class="clair">
+    <input type="email" name="emailemail">
+    <input type="date" name="datedate">
+
+    <div class="parent">
+        <p>blablablablablablablablablabla</p>
+        <input type="checkbox" name="crochet" id="crochet">
+    </div>
+    <div>
+        <h1>h1</h1>
+    </div>
+    <div>
+        <h2>h2</h2>
+    </div>
+    <div>
+        <h3>h3</h3>
+    </div>
+</body>
+</html>

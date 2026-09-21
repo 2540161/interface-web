@@ -1,9 +1,91 @@
+body {
+    margin: 0;
+}
+
 header {
     background: linear-gradient(#002768, #003ba0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+main .section1 {
+    flex: 1 1 40%;
+}
+
+main .section2 {
+    flex: 1 1 60%;
+}
+
+main img {
+    width: 1000px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+
+main h3 {
+    color: #11d62b;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 30px;
+}
+
+.carte {
+    width: 400px;
+    min-width: 350px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carte h3 {
+    color: #002768;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+.carte-contenu {
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.carte-contenu p {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.carte img {
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
 }
 
 footer {
     background-color: #CAE9FA;
+}
+
+footer h3 {
+    color: #002768;
+}
+
+p {
+    color: rgb(109, 109, 109);
 }
 
 button {
@@ -21,4 +103,12 @@ button:hover {
 
 #navigation {
     display: flex;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  color: white;
 }

@@ -9,12 +9,12 @@
   <body>
     <header>
       <div>
-        <h1>Cuisine MOMO</h1>
-        <h4>Cégep Montmorency</h4>
+        <h2>Cuisine MOMO</h2>
+        <p>Cégep Montmorency</p>
       </div>
       <nav>
         <ul id="navigation">
-          <li><a href="index.html">Accueil</a></li>
+          <li><a class="souligne" href="index.html">Accueil</a></li>
           <li><a href="pages/recettes.html">Recettes</a></li>
           <li><a href="pages/techniques.html">Techniques</a></li>
           <li><a href="pages/saisonnier.html">Saisonnier</a></li>
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-      <section class="section1">
+      <section class="hero-texte">
         <h1>Bienvenue sur Cuisine MOMO</h1>
         <p>
           Cuisine MOMO est un projet du Cégep Montmorency pour découvrir la
@@ -33,7 +33,7 @@
         </p>
         <h3>Bon appétit!</h3>
       </section>
-      <section class="section2">
+      <section class="hero-image">
         <img src="images/cuisine.jpg" alt="" />
       </section>
     </main>
@@ -55,9 +55,10 @@
         <div class="carte-contenu">
           <h3>Techniques</h3>
           <p>
-            Des classiques d’ici et d’ailleurs, testés par nos étudiant(e)s.
+            Couper, saisir, rôtir : maîtrisez l’essentiel sans équipement
+            compliqué.
           </p>
-          <button>Découvrir</button>
+          <button>Apprendre</button>
         </div>
       </div>
 
@@ -65,35 +66,37 @@
         <img src="images/saisonnier.jpg" alt="Recette" />
         <div class="carte-contenu">
           <h3>Saisonnier</h3>
-          <p>
-            Des classiques d’ici et d’ailleurs, testés par nos étudiant(e)s.
-          </p>
-          <button>Découvrir</button>
+          <p>Quoi cuisiner selon le mois? Misez sur la fraîcheur locale.</p>
+          <button>Consulter</button>
         </div>
       </div>
     </article>
 
     <footer>
-      <div>
-        <h3>Cuisine MOMO</h3>
-        <p>Cégep Montmorency</p>
-        <p>Laval, Québec</p>
+      <div class="footer-contenu">
+        <div class="footer-contenu-bloc">
+          <h3>Cuisine MOMO</h3>
+          <p>Cégep Montmorency</p>
+          <p>Laval, Québec</p>
+        </div>
+
+        <div class="footer-contenu-bloc">
+          <h3>Contact</h3>
+          <p>Téléphone: <a href="tel:4509756100">(450) 975-6100</a></p>
+          <p>
+            Courriel:
+            <a href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
+          </p>
+        </div>
+
+        <div class="footer-contenu-bloc">
+          <h3>Liens rapides</h3>
+          <p>Recettes</p>
+          <p>Techniques</p>
+        </div>
       </div>
 
-      <div>
-        <h3>Contact</h3>
-        <p>Téléphone: <a href="tel:4509756100">(450) 975-6100</a></p>
-        <p>
-          Courriel:
-          <a href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
-        </p>
-      </div>
-
-      <div>
-        <h3>Liens rapides</h3>
-        <p>Recettes</p>
-        <p>Techniques</p>
-      </div>
+      <hr class="footer-separateur" />
 
       <p>© 2025 Cuisine MOMO - Cégep Montmorency</p>
     </footer>

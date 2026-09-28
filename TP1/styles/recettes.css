@@ -1,0 +1,10 @@
+.header-recette {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    display: grid;
+}

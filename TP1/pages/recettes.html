@@ -4,22 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/recettes.css" />
   </head>
   <body>
-    <header>
+    <header class="header-commun">
       <div>
         <h2>Cuisine MOMO</h2>
         <p>Cégep Montmorency</p>
       </div>
       <nav>
         <ul id="navigation">
-          <li><a class="souligne" href="../index.html">Accueil</a></li>
-          <li><a href="recettes.html">Recettes</a></li>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a class="souligne" href="recettes.html">Recettes</a></li>
           <li><a href="techniques.html">Techniques</a></li>
           <li><a href="saisonnier.html">Saisonnier</a></li>
         </ul>
       </nav>
     </header>
+
+    <header class="header-recette">
+      <h1 class="texte-bleu-fonce">Toutes les recettes</h1>
+      <p>Parcourez nos idées repas et desserts. Chaque carte vous indique le temps, la portion et la difficulté.</p>
+    </header>
+
+    <article>
+      <div class="carte">
+        <img src="images/recette.jpg" alt="Recette" />
+        <div class="carte-contenu">
+          <h3 class="texte-bleu-fonce">Recettes vedettes</h3>
+          <p>
+            Des classiques d’ici et d’ailleurs, testés par nos étudiant(e)s.
+          </p>
+          <button>Découvrir</button>
+        </div>
+      </div>
+    </article>
   </body>
 </html>

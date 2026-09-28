@@ -3,8 +3,91 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+.header-recette h1 {
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.header-recette p {
+  margin-bottom: 40px;
 }
 
 article {
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  padding: 100px;
+  gap: 30px;
+}
+
+.carte {
+  width: auto;
+  min-width: 350px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carte-contenu {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.carte-contenu p {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.carte img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carte-badges {
+    display: flex;
+    gap: 10px;
+}
+
+.carte-badges p {
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: black;
+}
+
+p.badge-vert {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+p.badge-orange {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.1);
+}
+
+@media (min-width: 768px), (max-width: 1024px) {
+  article {
+    grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media (max-width: 768px) {
+  article {
+    grid-template-columns: repeat(1, 400px);
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    grid-template-columns: repeat(auto-fit, 400px);
+  }
 }

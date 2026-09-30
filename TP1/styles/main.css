@@ -70,17 +70,14 @@ button:hover {
 
 #navigation {
   display: flex;
-}
-
-#navigation .souligne {
-  text-decoration: underline;
-}
-
-ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   gap: 10px;
+}
+
+#navigation .souligne {
+  text-decoration: underline;
 }
 
 p {

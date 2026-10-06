@@ -1,0 +1,29 @@
+.header-techniques {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-techniques h1 {
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.header-techniques p {
+  margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+}
+
+.conteneur-cartes {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.carte {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}

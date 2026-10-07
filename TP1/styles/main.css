@@ -19,6 +19,9 @@ body {
   justify-content: space-between;
   padding: 0px 150px;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-commun p {

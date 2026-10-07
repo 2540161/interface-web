@@ -1,0 +1,96 @@
+.header-saisonnier {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-saisonnier h1 {
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.header-saisonnier p {
+    margin-bottom: 40px;
+}
+
+main {
+    padding: 30px 0px;
+}
+
+main,
+.conteneur-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteneur-table {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 30px 0px 50px 0px;
+}
+
+.table-disponibilite {
+    min-width: 500px;
+    margin: 0px 30px 30px 30px;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+th {
+    font-weight: 600;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0px 200px 0px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr {
+    height: 3rem;
+}
+
+.badge {
+    display: inline;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.badge-vert {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+.badge-orange {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.1);
+}
+
+.conteneur-cartes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 50%;
+    margin: 10px 0px 50px 0px;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 16px;
+}
+
+.carte h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}

@@ -1,80 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/techniques.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/techniques.css" />
 </head>
+
 <body>
-    <header class="header-commun">
-      <div>
-        <h2>Cuisine MOMO</h2>
+  <header class="header-commun">
+    <div>
+      <h2>Cuisine MOMO</h2>
+      <p>Cégep Montmorency</p>
+    </div>
+    <nav>
+      <ul id="navigation">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="recettes.html">Recettes</a></li>
+        <li><a class="souligne" href="techniques.html">Techniques</a></li>
+        <li><a href="saisonnier.html">Saisonnier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="header-techniques">
+    <h1 class="texte-bleu-fonce">Techniques de base</h1>
+    <p>Maîtriser les fondamentaux de la cuisine avec nos conseils pratiques</p>
+  </header>
+
+  <main>
+    <div class="conteneur-cartes">
+      <section class="carte">
+        <h2 class="texte-bleu-fonce">Coupe</h2>
+        <h3>Émincer</h3>
+        <p>Tranches fines, idéal pour les sautés.</p>
+        <h3>Brunoise</h3>
+        <p>Petits dés réguliers pour garnitures et sauces.</p>
+        <h3>Couper en dés</h3>
+        <p>Classique, taille moyenne pour soupes et mijotés.</p>
+      </section>
+
+      <section class="carte">
+        <h2 class="texte-bleu-fonce">Cuissons</h2>
+        <h3>Four</h3>
+        <p>Préchauffez et placez la grille au centre pour une cuisson uniforme.</p>
+        <h3>Poêle</h3>
+        <p>Surface bien chaude, ne surchargez pas, retournez seulement quand c’est saisi.</p>
+        <h3>Repos</h3>
+        <p>Laissez reposer la viande quelques minutes avant de servir.</p>
+      </section>
+
+      <section class="carte">
+        <h2 class="texte-bleu-fonce">Mesures & conversions</h2>
+        <p class="paragraphe-bloc"><b>1 tasse</b> = 250 ml</p>
+        <p class="paragraphe-bloc"><b>1 c. à soupe</b> = 15 ml</p>
+        <p class="paragraphe-bloc"><b>1 c. à thé</b> = 5 ml</p>
+      </section>
+    </div>
+
+    <section class="carte carte-securite">
+      <h2 class="texte-bleu-fonce">Conseil sécurité</h2>
+      <p><b>Important :</b> Lavez les mains et la planche entre le cru et le cuit.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contenu">
+      <div class="footer-contenu-bloc">
+        <h3 class="texte-bleu-fonce">Cuisine MOMO</h3>
         <p>Cégep Montmorency</p>
-      </div>
-      <nav>
-        <ul id="navigation">
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="recettes.html">Recettes</a></li>
-          <li><a class="souligne" href="techniques.html">Techniques</a></li>
-          <li><a href="saisonnier.html">Saisonnier</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <header class="header-techniques">
-      <h1 class="texte-bleu-fonce">Techniques de base</h1>
-      <p>Maîtriser les fondamentaux de la cuisine avec nos conseils pratiques</p>
-    </header>
-
-    <main>
-        <div class="conteneur-cartes">
-            <section class="carte">
-
-            </section>
-
-            <section class="carte">
-
-            </section>
-
-            <section class="carte">
-
-            </section>
-        </div>
-
-        <section class="carte">
-
-        </section>
-    </main>
-
-    <footer>
-      <div class="footer-contenu">
-        <div class="footer-contenu-bloc">
-          <h3 class="texte-bleu-fonce">Cuisine MOMO</h3>
-          <p>Cégep Montmorency</p>
-          <p>Laval, Québec</p>
-        </div>
-
-        <div class="footer-contenu-bloc">
-          <h3 class="texte-bleu-fonce">Contact</h3>
-          <p>Téléphone: <a class="texte-bleu-fonce" href="tel:4509756100">(450) 975-6100</a></p>
-          <p>
-            Courriel:
-            <a class="texte-bleu-fonce" href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
-          </p>
-        </div>
-
-        <div class="footer-contenu-bloc">
-          <h3 class="texte-bleu-fonce">Liens rapides</h3>
-          <p>Recettes</p>
-          <p>Techniques</p>
-        </div>
+        <p>Laval, Québec</p>
       </div>
 
-      <hr class="footer-separateur" />
+      <div class="footer-contenu-bloc">
+        <h3 class="texte-bleu-fonce">Contact</h3>
+        <p>Téléphone: <a class="texte-bleu-fonce" href="tel:4509756100">(450) 975-6100</a></p>
+        <p>
+          Courriel:
+          <a class="texte-bleu-fonce" href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
+        </p>
+      </div>
 
-      <p>© 2025 Cuisine MOMO - Cégep Montmorency</p>
-    </footer>
+      <div class="footer-contenu-bloc">
+        <h3 class="texte-bleu-fonce">Liens rapides</h3>
+        <p>Recettes</p>
+        <p>Techniques</p>
+      </div>
+    </div>
+
+    <hr class="footer-separateur" />
+
+    <p>© 2025 Cuisine MOMO - Cégep Montmorency</p>
+  </footer>
 </body>
+
 </html>

@@ -17,20 +17,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 150px;
+  padding: 0px min(5%, 150px);
   color: white;
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 1000;
 }
 
 .header-commun p {
-    color: white;
+  color: white;
 }
 
 .header-commun a {
   color: white;
   text-decoration: none;
+}
+
+.header-commun-titres {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-commun-titres *{
+  margin: 0px;
+}
+
+.header-commun-titres h2 {
+  margin-top: 15px;
+}
+
+.header-commun-titres p {
+  margin-bottom: 15px;
 }
 
 footer {
@@ -41,8 +59,9 @@ footer {
 }
 
 .footer-contenu {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -80,7 +99,8 @@ button:hover {
 }
 
 #navigation .souligne {
-  text-decoration: underline;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
 }
 
 p {
@@ -89,4 +109,11 @@ p {
 
 .texte-bleu-fonce {
   color: #002768;
+}
+
+@media (max-width: 480px) {
+  .header-commun {
+    flex-direction: column;
+      padding-bottom: 20px;
+  }
 }

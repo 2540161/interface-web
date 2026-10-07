@@ -30,12 +30,6 @@ main {
   border-radius: 20px;
 }
 
-main img {
-  width: 1000px;
-  object-fit: fill;
-  border-radius: 20px;
-}
-
 main h3 {
   color: #11d62b;
 }

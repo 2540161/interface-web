@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   padding: 0px 5%;
   color: white;
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -41,7 +41,7 @@ body {
   gap: 5px;
 }
 
-.header-commun-titres *{
+.header-commun-titres * {
   margin: 0px;
 }
 
@@ -118,9 +118,13 @@ p {
   color: var(--text-color-grey);
 }
 
+.texte-centre {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .header-commun {
     flex-direction: column;
-      padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 }

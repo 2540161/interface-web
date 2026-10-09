@@ -1,9 +1,10 @@
 .header-recette {
-    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 5%;
 }
 
 .header-recette h1 {
@@ -15,9 +16,9 @@
   margin-bottom: 40px;
 }
 
-article {
+.conteneur-cartes {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, minmax(300px, 400px));
   justify-content: center;
   padding: 100px;
   gap: 30px;
@@ -25,7 +26,7 @@ article {
 
 .carte {
   width: auto;
-  min-width: 350px;
+  min-width: 350;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 }
@@ -53,41 +54,41 @@ article {
 }
 
 .carte-badges {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .carte-badges p {
-    background-color: rgba(128, 128, 128, 0.1);
-    border-radius: 50px;
-    padding: 5px 10px;
-    color: black;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: black;
 }
 
 p.badge-vert {
-    color: green;
-    background-color: rgba(0, 128, 0, 0.1);
+  color: green;
+  background-color: rgba(0, 128, 0, 0.1);
 }
 
 p.badge-orange {
-    color: orange;
-    background-color: rgba(255, 166, 0, 0.1);
+  color: orange;
+  background-color: rgba(255, 166, 0, 0.1);
 }
 
 @media (max-width: 1024px) {
-  article {
-    grid-template-columns: repeat(2, 400px);
+  .conteneur-cartes {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  article {
+  .conteneur-cartes {
     grid-template-columns: 400px;
   }
 }
 
 @media (max-width: 480px) {
-  article {
+  .conteneur-cartes {
     grid-template-columns: 1fr;
     padding: 20px;
   }

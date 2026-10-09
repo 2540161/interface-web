@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 5%;
 }
 
 .header-saisonnier h1 {
@@ -16,7 +17,7 @@
 }
 
 main {
-    padding: 30px 0px;
+    padding: 30px 5%;
 }
 
 main,
@@ -27,16 +28,25 @@ main,
 }
 
 .conteneur-table {
+    align-items: flex-start;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin: 30px 0px 50px 0px;
+    padding: 0 20px 20px 20px;
     overflow-x: auto;
+    width: 90%;
+    max-width: 1000px;
 }
 
 .table-disponibilite {
     min-width: 500px;
-    margin: 0px 30px 30px 30px;
+    margin: 0px;
     border-collapse: collapse;
+    width: 100%;
+}
+
+.table-titre {
+    align-self: center;
 }
 
 thead {
@@ -50,7 +60,7 @@ th {
 th,
 td {
     text-align: left;
-    padding: 0px 200px 0px 20px;
+    padding: 15px 20px;
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -76,9 +86,8 @@ tr {
 
 .conteneur-cartes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 325px);
     gap: 2rem;
-    width: 60%;
     margin: 10px 0px 50px 0px;
 }
 
@@ -87,11 +96,23 @@ tr {
     flex-direction: column;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
 
 .carte h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .conteneur-cartes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .conteneur-cartes {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,120 +1,121 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-  </head>
-  <body>
-    <header class="header-commun">
-      <div class="header-commun-titres">
-        <h2>Cuisine MOMO</h2>
-        <p>Cégep Montmorency</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+  <header class="header-commun">
+    <div class="header-commun-titres">
+      <h2>Cuisine MOMO</h2>
+      <p>Cégep Montmorency</p>
+    </div>
+    <nav>
+      <ul id="navigation">
+        <li><a class="souligne" href="index.html">Accueil</a></li>
+        <li><a href="pages/recettes.html">Recettes</a></li>
+        <li><a href="pages/techniques.html">Techniques</a></li>
+        <li><a href="pages/saisonnier.html">Saisonnier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texte">
+        <h1 class="primary-color">Bienvenue sur Cuisine MOMO</h1>
+        <p class="texte-gris">
+          Cuisine MOMO est un projet du Cégep Montmorency pour découvrir la
+          cuisine au quotidien : des recettes accessibles, des techniques de
+          base expliquées simplement, et un coup d’oeil sur les produits de
+          saison au Québec.
+        </p>
+        <h3>Bon appétit!</h3>
       </div>
-      <nav>
-        <ul id="navigation">
-          <li><a class="souligne" href="index.html">Accueil</a></li>
-          <li><a href="pages/recettes.html">Recettes</a></li>
-          <li><a href="pages/techniques.html">Techniques</a></li>
-          <li><a href="pages/saisonnier.html">Saisonnier</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="hero-image">
+        <img src="images/hero-cooking.jpg" alt="Cuisine" />
+      </div>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-texte">
-          <h1 class="primary-color">Bienvenue sur Cuisine MOMO</h1>
+    <section class="cartes">
+      <article class="carte">
+        <img src="images/recettes-vedettes.jpg" alt="Recette" />
+        <div class="carte-contenu">
+          <h3 class="primary-color">Recettes vedettes</h3>
           <p class="texte-gris">
-            Cuisine MOMO est un projet du Cégep Montmorency pour découvrir la
-            cuisine au quotidien : des recettes accessibles, des techniques de
-            base expliquées simplement, et un coup d’oeil sur les produits de
-            saison au Québec.
+            Des classiques d’ici et d’ailleurs, testés par nos étudiant(e)s.
           </p>
-          <h3>Bon appétit!</h3>
+          <button onclick="window.location.href = 'pages/recettes.html'">
+            Découvrir
+          </button>
         </div>
-        <div class="hero-image">
-          <img src="images/cuisine.jpg" alt="Cuisine" />
-        </div>
-      </section>
+      </article>
 
-      <section class="cartes">
-        <article class="carte">
-          <img src="images/recette.jpg" alt="Recette" />
-          <div class="carte-contenu">
-            <h3 class="primary-color">Recettes vedettes</h3>
-            <p class="texte-gris">
-              Des classiques d’ici et d’ailleurs, testés par nos étudiant(e)s.
-            </p>
-            <button onclick="window.location.href = 'pages/recettes.html'">
-              Découvrir
-            </button>
-          </div>
-        </article>
-
-        <article class="carte">
-          <img src="images/technique.jpg" alt="Technique" />
-          <div class="carte-contenu">
-            <h3 class="primary-color">Techniques</h3>
-            <p class="texte-gris">
-              Couper, saisir, rôtir : maîtrisez l’essentiel sans équipement
-              compliqué.
-            </p>
-            <button onclick="window.location.href = 'pages/techniques.html'">
-              Apprendre
-            </button>
-          </div>
-        </article>
-
-        <article class="carte">
-          <img src="images/saisonnier.jpg" alt="Saisonnier" />
-          <div class="carte-contenu">
-            <h3 class="primary-color">Saisonnier</h3>
-            <p class="texte-gris">
-              Quoi cuisiner selon le mois? Misez sur la fraîcheur locale.
-            </p>
-            <button onclick="window.location.href = 'pages/saisonnier.html'">
-              Consulter
-            </button>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-contenu">
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Cuisine MOMO</h3>
-          <p class="texte-gris">Cégep Montmorency</p>
-          <p class="texte-gris">Laval, Québec</p>
-        </div>
-
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Contact</h3>
+      <article class="carte">
+        <img src="images/techniques.jpg" alt="Technique" />
+        <div class="carte-contenu">
+          <h3 class="primary-color">Techniques</h3>
           <p class="texte-gris">
-            Téléphone:
-            <a class="primary-color" href="tel:4509756100">(450) 975-6100</a>
+            Couper, saisir, rôtir : maîtrisez l’essentiel sans équipement
+            compliqué.
           </p>
-          <p class="texte-gris">
-            Courriel:
-            <a class="primary-color" href="mailto:info@cuisine-momo.ca"
-              >info@cuisine-momo.ca</a
-            >
-          </p>
+          <button onclick="window.location.href = 'pages/techniques.html'">
+            Apprendre
+          </button>
         </div>
+      </article>
 
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Liens rapides</h3>
-          <p class="texte-gris">Recettes</p>
-          <p class="texte-gris">Techniques</p>
+      <article class="carte">
+        <img src="images/saisonnier.jpg" alt="Saisonnier" />
+        <div class="carte-contenu">
+          <h3 class="primary-color">Saisonnier</h3>
+          <p class="texte-gris">
+            Quoi cuisiner selon le mois? Misez sur la fraîcheur locale.
+          </p>
+          <button onclick="window.location.href = 'pages/saisonnier.html'">
+            Consulter
+          </button>
         </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contenu">
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Cuisine MOMO</h3>
+        <p class="texte-gris">Cégep Montmorency</p>
+        <p class="texte-gris">Laval, Québec</p>
       </div>
 
-      <hr class="footer-separateur" />
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Contact</h3>
+        <p class="texte-gris">
+          Téléphone:
+          <a class="primary-color" href="tel:4509756100">(450) 975-6100</a>
+        </p>
+        <p class="texte-gris">
+          Courriel:
+          <a class="primary-color" href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
+        </p>
+      </div>
 
-      <p class="texte-gris">© 2025 Cuisine MOMO - Cégep Montmorency</p>
-    </footer>
-  </body>
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Liens rapides</h3>
+        <p class="texte-gris">Recettes</p>
+        <p class="texte-gris">Techniques</p>
+      </div>
+    </div>
+
+    <hr class="footer-separateur" />
+
+    <p class="texte-gris">© 2025 Cuisine MOMO - Cégep Montmorency</p>
+  </footer>
+</body>
+
 </html>

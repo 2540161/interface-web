@@ -1,126 +1,130 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recettes</title>
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/recettes.css" />
-  </head>
-  <body>
-    <header class="header-commun">
-      <div class="header-commun-titres">
-        <h2>Cuisine MOMO</h2>
-        <p>Cégep Montmorency</p>
-      </div>
-      <nav>
-        <ul id="navigation">
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a class="souligne" href="recettes.html">Recettes</a></li>
-          <li><a href="techniques.html">Techniques</a></li>
-          <li><a href="saisonnier.html">Saisonnier</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <header class="header-recette">
-      <h1 class="primary-color">Toutes les recettes</h1>
-      <p class="texte-gris">Parcourez nos idées repas et desserts. Chaque carte vous indique le temps, la portion et la difficulté.</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recettes</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/recettes.css" />
+</head>
 
-    <article>
-      <div class="carte">
-        <img src="../images/poutine.webp" alt="Recette" />
-        <div class="carte-contenu">
-          <h3 class="primary-color">Poutine maison classique</h3>
-          <p class="texte-gris">
-            La poutine qu'on aime : frites croustillantes, fromage en grains qui couine et sauce brune maison.
-          </p>
-          <div class="carte-badges">
-            <p>4 portions</p>
-            <p>40 min</p>
-            <p class="badge-vert">Facile</p>
-          </div>
-          <button onclick="window.location.href='recettes/poutine.html'">Voir la recette</button>
+<body>
+  <header class="header-commun">
+    <div class="header-commun-titres">
+      <h2>Cuisine MOMO</h2>
+      <p>Cégep Montmorency</p>
+    </div>
+    <nav>
+      <ul id="navigation">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a class="souligne" href="recettes.html">Recettes</a></li>
+        <li><a href="techniques.html">Techniques</a></li>
+        <li><a href="saisonnier.html">Saisonnier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="header-recette">
+    <h1 class="primary-color">Toutes les recettes</h1>
+    <p class="texte-gris">Parcourez nos idées repas et desserts. Chaque carte vous indique le temps, la portion et la
+      difficulté.</p>
+  </section>
+
+  <section class="conteneur-cartes">
+    <article class="carte">
+      <img src="../images/poutine.jpg" alt="Poutine" />
+      <div class="carte-contenu">
+        <h3 class="primary-color">Poutine maison classique</h3>
+        <p class="texte-gris">
+          La poutine qu'on aime : frites croustillantes, fromage en grains qui couine et sauce brune maison.
+        </p>
+        <div class="carte-badges">
+          <p>4 portions</p>
+          <p>40 min</p>
+          <p class="badge-vert">Facile</p>
         </div>
-      </div>
-
-      <div class="carte">
-        <img src="../images/salade-cesar.jpg" alt="Recette" />
-        <div class="carte-contenu">
-          <h3 class="primary-color">Salade César croquante</h3>
-          <p class="texte-gris">
-            Laitue croquante, croûtons et une vinaigrette crémeuse. Parfaite en accompagnement.
-          </p>
-          <div class="carte-badges">
-            <p>4 portions</p>
-            <p>20 min</p>
-            <p class="badge-vert">Facile</p>
-          </div>
-          <button>Voir la recette</button>
-        </div>
-      </div>
-
-      <div class="carte">
-        <img src="../images/general-tao.jpg" alt="Recette" />
-        <div class="carte-contenu">
-          <h3 class="primary-color">Poulet Général Tao simplifié</h3>
-          <p class="texte-gris">
-            Version rapide et accessible du classique sucré-salé.
-          </p>
-          <div class="carte-badges">
-            <p>4 portions</p>
-            <p>35 min</p>
-            <p class="badge-orange">Moyen</p>
-          </div>
-          <button>Voir la recette</button>
-        </div>
-      </div>
-
-      <div class="carte">
-        <img src="../images/brownies.jpg" alt="Recette" />
-        <div class="carte-contenu">
-          <h3 class="primary-color">Brownies fondants au chocolat</h3>
-          <p class="texte-gris">
-            Texture moelleuse et goût intense de cacao.
-          </p>
-          <div class="carte-badges">
-            <p>9 portions</p>
-            <p>45 min</p>
-            <p class="badge-vert">Facile</p>
-          </div>
-          <button>Voir la recette</button>
-        </div>
+        <button onclick="window.location.href='recettes/poutine.html'">Voir la recette</button>
       </div>
     </article>
 
-    <footer>
-      <div class="footer-contenu">
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Cuisine MOMO</h3>
-          <p class="texte-gris">Cégep Montmorency</p>
-          <p class="texte-gris">Laval, Québec</p>
+    <article class="carte">
+      <img src="../images/salade-cesar.jpg" alt="Salade césar" />
+      <div class="carte-contenu">
+        <h3 class="primary-color">Salade César croquante</h3>
+        <p class="texte-gris">
+          Laitue croquante, croûtons et une vinaigrette crémeuse. Parfaite en accompagnement.
+        </p>
+        <div class="carte-badges">
+          <p>4 portions</p>
+          <p>20 min</p>
+          <p class="badge-vert">Facile</p>
         </div>
+        <button>Voir la recette</button>
+      </div>
+    </article>
 
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Contact</h3>
-          <p class="texte-gris">Téléphone: <a class="primary-color" href="tel:4509756100">(450) 975-6100</a></p>
-          <p class="texte-gris">
-            Courriel:
-            <a class="primary-color" href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
-          </p>
+    <article class="carte">
+      <img src="../images/general-tao.jpg" alt="Poulet général tao" />
+      <div class="carte-contenu">
+        <h3 class="primary-color">Poulet Général Tao simplifié</h3>
+        <p class="texte-gris">
+          Version rapide et accessible du classique sucré-salé.
+        </p>
+        <div class="carte-badges">
+          <p>4 portions</p>
+          <p>35 min</p>
+          <p class="badge-orange">Moyen</p>
         </div>
+        <button>Voir la recette</button>
+      </div>
+    </article>
 
-        <div class="footer-contenu-bloc">
-          <h3 class="primary-color">Liens rapides</h3>
-          <p class="texte-gris">Recettes</p>
-          <p class="texte-gris">Techniques</p>
+    <article class="carte">
+      <img src="../images/brownies.jpg" alt="Brownies" />
+      <div class="carte-contenu">
+        <h3 class="primary-color">Brownies fondants au chocolat</h3>
+        <p class="texte-gris">
+          Texture moelleuse et goût intense de cacao.
+        </p>
+        <div class="carte-badges">
+          <p>9 portions</p>
+          <p>45 min</p>
+          <p class="badge-vert">Facile</p>
         </div>
+        <button>Voir la recette</button>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <div class="footer-contenu">
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Cuisine MOMO</h3>
+        <p class="texte-gris">Cégep Montmorency</p>
+        <p class="texte-gris">Laval, Québec</p>
       </div>
 
-      <hr class="footer-separateur" />
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Contact</h3>
+        <p class="texte-gris">Téléphone: <a class="primary-color" href="tel:4509756100">(450) 975-6100</a></p>
+        <p class="texte-gris">
+          Courriel:
+          <a class="primary-color" href="mailto:info@cuisine-momo.ca">info@cuisine-momo.ca</a>
+        </p>
+      </div>
 
-      <p class="texte-gris">© 2025 Cuisine MOMO - Cégep Montmorency</p>
-    </footer>
-  </body>
+      <div class="footer-contenu-bloc">
+        <h3 class="primary-color">Liens rapides</h3>
+        <p class="texte-gris">Recettes</p>
+        <p class="texte-gris">Techniques</p>
+      </div>
+    </div>
+
+    <hr class="footer-separateur" />
+
+    <p class="texte-gris">© 2025 Cuisine MOMO - Cégep Montmorency</p>
+  </footer>
+</body>
+
 </html>

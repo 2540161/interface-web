@@ -1,9 +1,9 @@
 .header-techniques {
-    background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .header-techniques h1 {
@@ -16,53 +16,65 @@
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    margin: 40px 0px 80px 0px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 5% 80px 5%;
+  gap: 20px;
 }
 
 .conteneur-cartes {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    gap: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+  justify-content: center;
 }
 
 .carte {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    padding: 10px 30px;
-    border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  border-radius: 20px;
 }
 
 .carte p {
-    color: black;
+  color: black;
 }
 
 .carte h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .paragraphe-bloc {
-    background-color: rgba(228, 228, 228, 0.3);
-    padding: 10px;
-    border-radius: 10px;
+  background-color: rgba(228, 228, 228, 0.3);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .carte-securite {
-    background-color: #f0f9f4;
-    border-left: 5px solid #2ecc71;
-    max-width: 960px;
-    margin: 20px auto 0 auto;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #f0f9f4;
+  border-left: 5px solid #2ecc71;
+  max-width: 960px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .carte-securite h2 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
 }
 
 .carte-securite p {
-    color: #2ecc71;
+  color: #2ecc71;
+}
+
+@media (max-width: 1024px) {
+  .conteneur-cartes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .conteneur-cartes {
+    grid-template-columns: 1fr;
+  }
 }

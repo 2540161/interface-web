@@ -82,12 +82,13 @@ p.badge-orange {
 
 @media (max-width: 768px) {
   article {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: 400px;
   }
 }
 
 @media (max-width: 480px) {
   article {
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
 }

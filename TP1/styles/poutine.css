@@ -6,8 +6,7 @@
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
   display: flex;
   flex-direction: column;
-  padding-left: 150px;
-  padding-bottom: 25px;
+  padding: 0px 5% 25px 5%;
 }
 
 .header-poutine h1 {
@@ -46,7 +45,7 @@
 }
 
 main {
-  padding: 50px 150px;
+  padding: 50px 5%;
 }
 
 main button {
@@ -87,4 +86,10 @@ ul, ol {
   border-radius: 12px;
   padding: 20px;
   background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .recette {
+    flex-direction: column;
+  }
 }

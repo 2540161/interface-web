@@ -1,3 +1,5 @@
+@import url("variables.css");
+
 body {
   margin: 0;
   font-family:
@@ -17,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px min(5%, 150px);
+  padding: 0px 5%;
   color: white;
   position:sticky;
   top: 0;
@@ -56,6 +58,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .footer-contenu {
@@ -104,14 +107,18 @@ button:hover {
 }
 
 p {
-  color: rgb(109, 109, 109);
+  color: var(--text-color);
 }
 
-.texte-bleu-fonce {
-  color: #002768;
+.primary-color {
+  color: var(--primary-color);
 }
 
-@media (max-width: 480px) {
+.texte-gris {
+  color: var(--text-color-grey);
+}
+
+@media (max-width: 768px) {
   .header-commun {
     flex-direction: column;
       padding-bottom: 20px;

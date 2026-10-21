@@ -12,7 +12,7 @@
  */
 function convertirCelsiusVersfahrenheit(celsius) {
     // TODO: Retourner le résultat de la conversion en utilisant l'expression c*9/5+32
-    return undefined;
+    return celsius * 9 / 5 + 32;
 }
 
 /**
@@ -20,8 +20,14 @@ function convertirCelsiusVersfahrenheit(celsius) {
  */
 function initialiser() {
     // TODO: Récupérer les éléments DOM (#c, #go, #out)
+    const c = document.querySelector("#c");
+    const go = document.querySelector("#go");
+    const out = document.querySelector("#out");
 
     // TODO: Au clic sur #go, convertir la valeur de #c et afficher dans #out
+    go.addEventListener("click", () => {
+        out.textContent = `${convertirCelsiusVersfahrenheit(c.value)}°F`;
+    })
     
     // TODO: Gérer le cas où l'input est vide (afficher "Veuillez entrer une valeur")
 }
